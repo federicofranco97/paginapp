@@ -14,14 +14,11 @@
     color: white;   
     width: 90%;
     font-family: Impact, Charcoal, sans-serif;
-   
-    
 }
 
 .perTd
 {
-    padding: 20px;
-    
+    padding: 20px;    
 }
 
 #myTh
@@ -32,44 +29,49 @@
 #backDiv
 {
     background-color:#666666;
-    width: 1613px;
+    width: 85.5%;
     margin-left: 5%;
-    height: 1000px;
+    height: 1010px;
     padding-top: 50px;
 }
 
-#lineSep
-{
+#leftBlock
+{   
     height: 456px;
 }
 
-.bloqueleft1
+#bloqueleft1
 {
-    width: 450px;
+    width: 30%;
     background-color: #333333;
     border-style: solid;
     height: 450px;
-    margin-left: 200px;
+    margin-left: 12%;    
+}
+
+#bloqueleft2
+{
+    width: 30%;
+    background-color: #333333;
+    border-style: solid;
+    height: 450px;
+    margin-left: 12%;    
     float: left;
 }
 
-
-
-
-.bloqueright1
-{
-    width: 450px;
-    background-color: #333333;
-    border-style: solid;
-    height: 450px;
-    margin-right:  200px;
-    float: right;
+.separador
+{    
+    height: 50px;
+    width: 100%;    
 }
 
-.separador
+#rightBlock
 {
-    
-    height: 50px;
-    width: 100%;
-    
+    float: right;
+    background-color: #333333;
+    height: 96%;
+    width: 35%;
+    margin-right: 10%;
+    margin-top: -45%;
+    border-style: solid;
 }
