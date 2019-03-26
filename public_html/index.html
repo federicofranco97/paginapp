@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Vista Tarea</title>
@@ -17,10 +12,10 @@ and open the template in the editor.
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td class="perTd" style="padding-left: 108px">Company Name</td>
-                        <td class="perTd">Home</td>
-                        <td class="perTd">About</td>
-                        <td class="perTd">Other</td>
+                        <td class="perTd" style="padding-left: 108px" >Company Name</td>
+                        <td class="perTd" onclick="showSign(this)">Home</td>
+                        <td class="perTd" onclick="showSign(this)">About</td>
+                        <td class="perTd" onclick="showSign(this)">Other</td>
                     </tr>
                 </tbody>
             </table>            
@@ -31,39 +26,78 @@ and open the template in the editor.
             
             <div id="leftBlock">
                 <div id="bloqueleft1">
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing 
+                        elit ut fermentum, vel pretium facilisis fringilla 
+                        velit odio litora natoque, conubia dictumst venenatis
+                        lectus potenti phasellus habitant suscipit. Nunc nibh 
+                        lobortis sociis mattis suscipit sociosqu volutpat, rhoncus 
+                        velit lacus molestie neque. Mi mollis condimentum risus 
+                        mauris neque integer, cum feugiat egestas duis enim natoque,
+                        turpis mus est aliquet facilisi. Bibendum malesuada etiam
+                        dapibus mus platea sapien blandit nullam pulvinar sociosqu, 
+                        congue sed laoreet nisi libero himenaeos phasellus fermentum 
+                        dictumst, aenean lobortis mauris curabitur hendrerit donec
+                        eu porta morbi. Purus orci id duis lobortis fusce blandit 
+                        class montes netus, ad a ullamcorper congue dui posuere 
+                        aliquam arcu, semper metus nec commodo maecenas venenatis 
+                        interdum per. Egestas urna natoque facilisi praesent 
+                        himenaeos sollicitudin suscipit tincidunt conubia eleifend, 
+                        laoreet pharetra at pulvinar habitant cursus iaculis aenean 
+                        odio, imperdiet pellentesque non facilisis arcu blandit 
+                        eu per hendrerit.
+                    </p>                  
                 </div>
                 
                 <div class="separador"></div>
                     
                 <div id="bloqueleft2">
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
-                    <label>Texto Texto Texto Texto Texto</label>
+                   <p>Lorem ipsum dolor sit amet consectetur adipiscing 
+                        elit ut fermentum, vel pretium facilisis fringilla 
+                        velit odio litora natoque, conubia dictumst venenatis
+                        lectus potenti phasellus habitant suscipit. Nunc nibh 
+                        lobortis sociis mattis suscipit sociosqu volutpat, rhoncus 
+                        velit lacus molestie neque. Mi mollis condimentum risus 
+                        mauris neque integer, cum feugiat egestas duis enim natoque,
+                        turpis mus est aliquet facilisi. Bibendum malesuada etiam
+                        dapibus mus platea sapien blandit nullam pulvinar sociosqu, 
+                        congue sed laoreet nisi libero himenaeos phasellus fermentum 
+                        dictumst, aenean lobortis mauris curabitur hendrerit donec
+                        eu porta morbi. Purus orci id duis lobortis fusce blandit 
+                        class montes netus, ad a ullamcorper congue dui posuere 
+                        aliquam arcu, semper metus nec commodo maecenas venenatis 
+                        interdum per. Egestas urna natoque facilisi praesent 
+                        himenaeos sollicitudin suscipit tincidunt conubia eleifend, 
+                        laoreet pharetra at pulvinar habitant cursus iaculis aenean 
+                        odio, imperdiet pellentesque non facilisis arcu blandit 
+                        eu per hendrerit.
+                    </p>        
                 </div>                    
             </div>
             
             <div id="rightBlock">
                 
             </div>
-            
-            
-            
+        </div>
+        
+        <nav style="margin-bottom: -5%">
+            <table id="menuLow">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td class="myTr">Home</td>
+                        <td class="myTr">About</td>
+                        <td class="myTr">Contact</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
     </body>
 </html>
+
+<script>
+    function showSign(header){        
+        alert(header.innerText);
+    }
+    
+</script>
