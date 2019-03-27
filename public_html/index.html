@@ -7,12 +7,13 @@
         <link rel="stylesheet" type="text/css" href="resources/style.css">
     </head>
     <body id="bodymain">
+    <div id="all">
         <div id="headerDiv">
             <table class="menuBar">
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td class="perTd" style="padding-left: 108px" >Company Name</td>
+                        <td class="perTd" style="padding-left: 108px" onclick="showSign(this)">Company Name</td>
                         <td class="perTd" onclick="showSign(this)">Home</td>
                         <td class="perTd" onclick="showSign(this)">About</td>
                         <td class="perTd" onclick="showSign(this)">Other</td>
@@ -75,11 +76,50 @@
             </div>
             
             <div id="rightBlock">
+                <div id="right1">
+                    <p style="text-align: center">Lorem ipsum dolor sit amet consectetur adipiscing 
+                        elit ut fermentum, vel pretium facilisis fringilla 
+                        velit odio litora natoque, conubia dictumst venenatis
+                        lectus potenti phasellus habitant suscipit. Nunc nibh 
+                        lobortis sociis mattis suscipit sociosqu volutpat, rhoncus 
+                        velit lacus molestie neque. Mi mollis condimentum risus 
+                        mauris neque integer, cum feugiat egestas duis enim natoque,
+                        turpis mus est aliquet facilisi. Bibendum malesuada etiam
+                        dapibus mus platea sapien blandit nullam pulvinar sociosqu, 
+                        congue sed laoreet nisi libero himenaeos phasellus fermentum 
+                        dictumst, aenean lobortis mauris curabitur hendrerit donec
+                        eu porta morbi. 
+                    </p>        
+                </div>
                 
+                <div id="right2">
+                    <p style="text-align: center">Lorem ipsum dolor sit amet consectetur adipiscing 
+                        elit ut fermentum, vel pretium facilisis fringilla 
+                        velit odio litora natoque, conubia dictumst venenatis
+                        lectus potenti phasellus habitant suscipit. Nunc nibh 
+                        lobortis sociis mattis suscipit sociosqu volutpat, rhoncus 
+                        velit lacus molestie neque.
+                    </p>        
+                    <br>
+                    <span style="float: left;margin-left: 9%">Lorem is: </span>
+                    <br>
+                    <ul style="text-align: left">
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>  
+                </div>
             </div>
         </div>
         
-        <nav style="margin-bottom: -5%">
+        
+        
+        
+        <footer id="myFooter">
             <table id="menuLow">
                 <thead></thead>
                 <tbody>
@@ -87,17 +127,30 @@
                         <td class="myTr">Home</td>
                         <td class="myTr">About</td>
                         <td class="myTr">Contact</td>
+                        <td class="myTr" onclick="easterEgg()" style="font-size: 1px">.</td>
                         
                     </tr>
                 </tbody>
             </table>
-        </nav>
+        </footer>
+    </div>
+        <div id="hidden" style="display: none"><img src="resources/giphy.gif"></div>
     </body>
 </html>
 
 <script>
     function showSign(header){        
         alert(header.innerText);
+    }
+    
+    function reload(){
+        location.reload(true);
+    }
+    
+    function easterEgg(){
+        document.getElementById("all").style.display="none";
+        document.getElementById("hidden").style.display="";
+        setTimeout("reload()",2000);
     }
     
 </script>
